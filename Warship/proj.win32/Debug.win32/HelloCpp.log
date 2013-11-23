@@ -1,0 +1,50 @@
+﻿生成启动时间为 2013/11/23 11:00:59。
+     1>项目“C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\HelloCpp.vcxproj”在节点 2 上(Build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug.win32\HelloCpp.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\..\..\..\cocos2dx" /I"C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\..\..\..\cocos2dx\include" /I"C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\..\..\..\cocos2dx\kazmath\include" /I"C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\..\..\..\cocos2dx\platform\win32" /I"C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\..\..\..\cocos2dx\platform\third_party\win32" /I"C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\..\..\..\cocos2dx\platform\third_party\win32\OGLES" /I"C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\..\..\..\external" /I"C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\..\..\..\external\chipmunk\include\chipmunk" /I"C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\..\..\..\CocosDenshion\include" /I"C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\..\..\..\extensions" /I"C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2\Classes" /I..\Classes /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /wd4819 /analyze- /errorReport:prompt ..\Classes\Objects\Modules\MachineGun.cpp
+         MachineGun.cpp
+     1>c:\users\twinsen\desktop\cocos2d-x-2.2\template\particlebattle2 - new\classes\objects\modules\machinegun.cpp(27): warning C4305: “=”: 从“double”到“float”截断
+       PreLinkEvent:
+         if not exist "C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\Debug.win32\" mkdir "C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\Debug.win32\"
+         xcopy /Y /Q "C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\..\..\..\external\libwebsockets\win32\lib\*.*" "C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\Debug.win32\"
+         :VCEnd
+         复制了 2 个文件
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\Debug.win32\HelloCpp.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\Debug.win32\\" libExtensions.lib libcocos2d.lib libCocosDenshion.lib opengl32.lib glew32.lib libBox2d.lib libchipmunk.lib libcurl_imp.lib pthreadVCE2.lib websockets.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\Debug.win32\HelloCpp.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\Debug.win32\HelloCpp.lib" /MACHINE:X86 /SAFESEH Debug.win32\AppDelegate.obj
+         Debug.win32\BLinearMotion.obj
+         Debug.win32\FollowingMovement.obj
+         Debug.win32\GlobalFunc.obj
+         Debug.win32\BackGroundLayer.obj
+         Debug.win32\BulletLayer.obj
+         Debug.win32\EnemyLayer.obj
+         Debug.win32\GamingLayer.obj
+         Debug.win32\LayerParticle.obj
+         Debug.win32\UILayer.obj
+         Debug.win32\Bullet.obj
+         Debug.win32\Enemy.obj
+         Debug.win32\Entity.obj
+         Debug.win32\MachineGun.obj
+         Debug.win32\BattleShip.obj
+         Debug.win32\EmitterExtends.obj
+         Debug.win32\GameScene.obj
+         Debug.win32\SneakyButton.obj
+         Debug.win32\SneakyButtonSkinnedBase.obj
+         Debug.win32\SneakyJoystick.obj
+         Debug.win32\SneakyJoystickSkinnedBase.obj
+         Debug.win32\main.obj
+         "C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\Debug.win32\libcocos2d.lib"
+         "C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\Debug.win32\libCocosDenshion.lib"
+         "C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\Debug.win32\libExtensions.lib"
+         "C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\Debug.win32\libBox2D.lib"
+         "C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\Debug.win32\libchipmunk.lib"
+         HelloCpp.vcxproj -> C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\Debug.win32\HelloCpp.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug.win32\HelloCpp.unsuccessfulbuild”。
+         正在对“Debug.win32\HelloCpp.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Users\Twinsen\Desktop\cocos2d-x-2.2\template\ParticleBattle2 - new\proj.win32\HelloCpp.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:05.42
