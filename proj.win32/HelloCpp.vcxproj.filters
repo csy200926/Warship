@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Components">
+      <UniqueIdentifier>{ff1e3df2-988b-47c6-9c47-4f9eb002f2f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Layers">
+      <UniqueIdentifier>{cd4a90e6-d509-4c60-9353-0deccbf49537}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Particles">
+      <UniqueIdentifier>{04f3a5fe-1eb4-4744-ad94-f88540a2e76a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Scenes">
+      <UniqueIdentifier>{bfa4db89-7b29-4682-8ec1-f44cbe65296f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SneakyInput">
+      <UniqueIdentifier>{42e56048-2f4b-49b5-9f41-8fcd1caba4e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Components\BulletComponent">
+      <UniqueIdentifier>{1ee0e2f3-b53a-4e6b-8ff5-43564f168577}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Components\EnemyMovementComponent">
+      <UniqueIdentifier>{a818b477-d1ca-4305-95eb-7a6f044a9c35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Objects">
+      <UniqueIdentifier>{a03d9fca-7241-42f7-af0d-b23379ec8b0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Objects\Bullets">
+      <UniqueIdentifier>{ea1d138b-e0b8-459e-8fec-b3c2cc8ea54a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Objects\Enemies">
+      <UniqueIdentifier>{94cb763e-269c-4053-9013-1578b1887f4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Objects\Entity">
+      <UniqueIdentifier>{5a8c7ba4-e8c2-4043-853d-4d5e4f7e78b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Objects\Modules">
+      <UniqueIdentifier>{05726600-7474-4f69-83a4-6dec438dcae3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Objects\Player">
+      <UniqueIdentifier>{00c2f4dc-8d03-4abd-b9f7-47253d61b0f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{eed5db5c-32fa-424d-923d-e5a7dd272f9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Joystick">
+      <UniqueIdentifier>{4dbdb4d2-2e55-4c71-8f5d-6db8fbeb7d63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Components\BulletComponents\BLinearMotion.cpp">
+      <Filter>Classes\Components\BulletComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Components\EnemyMovementComponents\FollowingMovement.cpp">
+      <Filter>Classes\Components\EnemyMovementComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layers\GamingLayer.cpp">
+      <Filter>Classes\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layers\LayerParticle.cpp">
+      <Filter>Classes\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layers\UILayer.cpp">
+      <Filter>Classes\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layers\BackGroundLayer.cpp">
+      <Filter>Classes\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layers\BulletLayer.cpp">
+      <Filter>Classes\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layers\EnemyLayer.cpp">
+      <Filter>Classes\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Player\BattleShip.cpp">
+      <Filter>Classes\Objects\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Modules\MachineGun.cpp">
+      <Filter>Classes\Objects\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Entity\Entity.cpp">
+      <Filter>Classes\Objects\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Enemies\Enemy.cpp">
+      <Filter>Classes\Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Bullets\Bullet.cpp">
+      <Filter>Classes\Objects\Bullets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Particles\EmitterExtends.cpp">
+      <Filter>Classes\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\GameScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SneakyInput\SneakyButton.cpp">
+      <Filter>Classes\SneakyInput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SneakyInput\SneakyButtonSkinnedBase.cpp">
+      <Filter>Classes\SneakyInput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SneakyInput\SneakyJoystick.cpp">
+      <Filter>Classes\SneakyInput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SneakyInput\SneakyJoystickSkinnedBase.cpp">
+      <Filter>Classes\SneakyInput</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GlobalFunc.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\Classes\Components\BulletComponents\BLinearMotion.h">
+      <Filter>Classes\Components\BulletComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Components\EnemyMovementComponents\FollowingMovement.h">
+      <Filter>Classes\Components\EnemyMovementComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layers\EnemyLayer.h">
+      <Filter>Classes\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layers\GamingLayer.h">
+      <Filter>Classes\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layers\LayerParticle.h">
+      <Filter>Classes\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layers\UILayer.h">
+      <Filter>Classes\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layers\BackGroundLayer.h">
+      <Filter>Classes\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layers\BulletLayer.h">
+      <Filter>Classes\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Player\BattleShip.h">
+      <Filter>Classes\Objects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Modules\MachineGun.h">
+      <Filter>Classes\Objects\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Entity\Entity.h">
+      <Filter>Classes\Objects\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Enemies\Enemy.h">
+      <Filter>Classes\Objects\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Bullets\Bullet.h">
+      <Filter>Classes\Objects\Bullets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Particles\EmitterExtends.h">
+      <Filter>Classes\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\GameScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SneakyInput\SneakyButton.h">
+      <Filter>Classes\SneakyInput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SneakyInput\SneakyButtonSkinnedBase.h">
+      <Filter>Classes\SneakyInput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SneakyInput\SneakyJoystick.h">
+      <Filter>Classes\SneakyInput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SneakyInput\SneakyJoystickSkinnedBase.h">
+      <Filter>Classes\SneakyInput</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GlobalFunc.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Classes\Layers\GamingLayer.inl">
+      <Filter>Classes\Layers</Filter>
+    </None>
+    <None Include="..\Classes\Objects\Player\BattleShip.inl">
+      <Filter>Classes\Objects\Player</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\CloseNormal.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\CloseSelected.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\HelloWorld.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\LittleFlight.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\money.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\ParticleType1.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\PenetreBullet.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\button-activated.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\button-default.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\button-disabled.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\Resources\button-pressed.png">
+      <Filter>Resources</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
