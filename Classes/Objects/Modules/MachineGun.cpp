@@ -14,18 +14,27 @@ using namespace cocos2d;
 bool MachineGun::init()
 {
 
-    if ( !Entity::init() ) {
+	if ( !ModuleAbstract::init() ) {
         return false;
     }
     
     m_pSprite = CCSprite::create("CloseNormal.png");
     addChild(m_pSprite);
+	
+	m_pTarget = NULL;
 
-	m_dir = ccp(0,0);
-
+	// Weapon Properties
     m_omega = 5;
-    m_coolDown = 0.1;
+    m_coolDown = 0.01;
     m_fireRange = 500;
+	m_fireRate = 0.1;
+
+	m_diffuseRate = 10.0;
+
+	// Updaters
+	m_isReadyToFire = false;
+	m_isCoolDown = false;
+
     scheduleUpdate();
     
     return true;
@@ -33,48 +42,44 @@ bool MachineGun::init()
 
 void MachineGun::update(float dt)
 {
-	Entity::update(dt);
-	if (m_coolDown)
+	ModuleAbstract::update(dt);
+
+	if (m_isCoolDown)
 	{
-		// Auto aimming and firing at target
-		CCObject *pE;
-		Entity *pEnemy;
-		CCARRAY_FOREACH(GamingLayer::getGamingLayer()->getEnemyLayer()->getChildren(), pE)
+		if (m_pTarget == NULL)
 		{
-			pEnemy = dynamic_cast<Entity*>(pE);
-			CCPoint worldPosition = getWorldPosition();
-			if (ccpDistance(pEnemy->getPosition(), worldPosition) <= m_fireRange )
+			selectTarget();
+		}
+		if (m_pTarget)
+		{
+			if (m_pTarget->isDead() == false && ccpDistance( m_pTarget->getPosition(),getWorldPosition()) < m_fireRange)
 			{
-				CCPoint dir = ccp(pEnemy->getPosition().x - worldPosition.x ,
-									pEnemy->getPosition().y - worldPosition.y );
-            
-				// Rotate to target dir
-				float angle = rotateToVec2WithOmega( dir , m_omega, getWorldRotation());
-				setWorldRotation(angle);
-            
+
+				rotateToTarget();
 				// Shoot to target
-				Shoot( (360 +( getRotation() + getParent()->getRotation()))+ ( 20 * CCRANDOM_0_1() - 10) );
-				return;
-			}
+				fire();
+			}else
+				m_pTarget = NULL;
 		}
 	}
 }
 
-void MachineGun::Shoot( const float angle )
-{
-    if (m_isCoolDown) {
-        
-        Bullet *pBullet = Bullet::create();
-        
-        
-        CCPoint spawnPosition = getParent()->convertToWorldSpace(getPosition());
-        spawnPosition = GamingLayer::getGamingLayer()->getBulletLayer()->convertToNodeSpace(spawnPosition);
-        pBullet->setPosition( spawnPosition );
-        
-        
-        pBullet->setRotation( angle );
-        GamingLayer::getGamingLayer()->getBulletLayer()->addChild(pBullet);
-    }
-}
 
+void MachineGun::fire()
+{
+
+	float angle = (360 +( getRotation() + getParent()->getRotation()))+ ( 2* m_diffuseRate * CCRANDOM_0_1() - m_diffuseRate); 
+
+	if (m_isReadyToFire)
+	{
+		Bullet *pBullet = Bullet::create();
+           
+		CCPoint spawnPosition = getParent()->convertToWorldSpace(getPosition());
+		spawnPosition = GamingLayer::getGamingLayer()->getBulletLayer()->convertToNodeSpace(spawnPosition);
+		pBullet->setPosition( spawnPosition );
+        
+		pBullet->setRotation( angle );
+		GamingLayer::getGamingLayer()->getBulletLayer()->addChild(pBullet);
+	}
+}
 

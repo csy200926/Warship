@@ -37,6 +37,20 @@ void Enemy::takeDamages(const unsigned int i_damge)
     m_life -= i_damge;
     
     if (m_life <= 0 ) 
-        getsKilled();
+	{
+		if ( m_isDead == true )
+		{
+			return;
+		}
+		m_isDead = true;
+
+		// play deadth animation.............
+		scheduleOnce(schedule_selector(Enemy::getsKilled),0.5f);
+        //getsKilled();
+	}
 }
 
+void Enemy::getsKilled(float dt)
+{
+	removeFromParent();
+}

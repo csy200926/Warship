@@ -38,8 +38,6 @@ bool Entity::init()
 
 void Entity::update(float dt)
 {
-
-    
     m_publicCounter += dt;
     
     if ( m_publicCounter >= m_coolDown )
@@ -81,4 +79,12 @@ collisionRect Entity::getCollisionRect()
 }
 
 
-
+void Entity::getsKilled()
+{
+	if ( m_isDead == true )
+	{
+		return;
+	}
+	m_isDead = true;
+	removeFromParent();
+}

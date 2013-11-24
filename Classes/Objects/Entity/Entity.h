@@ -8,45 +8,40 @@
 
 
 
-	class Entity : public cocos2d::CCNode
-	{
-	public:
-		Entity(void);
-		~Entity(void);
-		inline void getsKilled();
-        collisionRect getCollisionRect();
-
-    private:
-        float m_publicCounter;
-
-	protected:
-		// To avoid collision dectction conflicts,
-		// We do not simply remove from parent
-		bool m_isDead;
-        
-        // collisionRect size
-        float m_width; // 长的一半尺寸
-        float m_height;// 宽的一半尺寸
-        
-        bool    m_isCoolDown;
-        float   m_coolDown;
-        virtual bool init();
-
-        virtual void update(float dt);
-
-
-
-	};
-
-inline void Entity::getsKilled()
+class Entity : public cocos2d::CCNode
 {
-	if ( m_isDead == true )
-	{
-		return;
-	}
-	m_isDead = true;
-	removeFromParent();
+public:
+	Entity(void);
+	~Entity(void);
+	virtual void getsKilled();
+	inline bool isDead();
+
+    collisionRect getCollisionRect();
+private:
+    float m_publicCounter;
+
+protected:
+	// To avoid collision dectction conflicts,
+	// We do not simply remove from parent
+	bool m_isDead;
+        
+    // collisionRect size
+    float m_width; // 长的一半尺寸
+    float m_height;// 宽的一半尺寸
+        
+    bool    m_isCoolDown;
+    float   m_coolDown;
+    virtual bool init();
+
+    virtual void update(float dt);
+
+};
+
+bool Entity::isDead()
+{
+	return m_isDead;
 }
+
 
 #endif
 

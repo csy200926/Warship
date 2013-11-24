@@ -52,6 +52,9 @@
     <Filter Include="Resources\Joystick">
       <UniqueIdentifier>{4dbdb4d2-2e55-4c71-8f5d-6db8fbeb7d63}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Components\ShootingComponents">
+      <UniqueIdentifier>{306dd3d3-ab2a-4b97-8d8b-58d4886ac70b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -119,6 +122,9 @@
     </ClCompile>
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Modules\ModuleAbstract.cpp">
+      <Filter>Classes\Objects\Modules</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -188,6 +194,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Modules\ModuleAbstract.h">
+      <Filter>Classes\Objects\Modules</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

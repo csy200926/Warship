@@ -29,7 +29,7 @@ private:
     cocos2d::CCSprite *m_pSprite;
 
     unsigned int m_life;
-
+	void getsKilled(float dt);
 };
 
 
