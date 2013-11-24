@@ -51,8 +51,7 @@ bool EmitterExtends::init()
     m_fAngleVar = 180;
     
     // emitter position
-    cocos2d:: CCSize winSize = cocos2d::CCDirector::sharedDirector()->getWinSize();
-    this->setPosition(ccp(winSize.width/2, winSize.height/2));
+	setPosition(cocos2d::CCPointZero);
     setPosVar(cocos2d::CCPointZero);
     
     // life of particles
@@ -66,6 +65,8 @@ bool EmitterExtends::init()
     
     // emits per second
     m_fEmissionRate = 500;
+
+	m_ePositionType = cocos2d::kCCPositionTypeRelative;
     
     // additive
     this->setBlendAdditive(true);
@@ -109,7 +110,6 @@ void EmitterExtends::SetParSize(float s)
 void EmitterExtends::update(float delta)
 {
     cocos2d::CCParticleSystemQuad::update(delta);
-    
     //bounce back from borders
     unsigned int pidx = 0;
     if (m_bVisible)

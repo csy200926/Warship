@@ -1,5 +1,7 @@
 #include "LayerParticle.h"
 
+#include "GamingLayer.h"
+
 
 
 LayerParticle::LayerParticle(void)
@@ -51,7 +53,7 @@ void LayerParticle::CreateParticle(const cocos2d::CCPoint pos,ParticleType type)
 			break;
     }
     
-    pe->SetBorder(cocos2d::CCRect(0,0,960,640));
+    pe->SetBorder(cocos2d::CCRect(0,0,1920,1280));
     pe->retain();
     pe->setAutoRemoveOnFinish(true);
     pe->setPosition(pos);

@@ -15,6 +15,8 @@ public:
     //override init function of sprite
     virtual bool init();
     virtual void update(float delta);
+
+
     void SetBorder(const cocos2d::CCRect border);
     void SetParColor(float r,float g,float b);
     //0.0f - 1.0f

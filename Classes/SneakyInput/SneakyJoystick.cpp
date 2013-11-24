@@ -44,7 +44,9 @@ void SneakyJoystick::onExit()
 	CCDirector::sharedDirector()->getTouchDispatcher()->removeDelegate(this);
 }
 
-float round(float r) {
+
+
+float round1(float r) {
     return (r > 0.0) ? floor(r + 0.5) : ceil(r - 0.5);
 }
 
@@ -71,7 +73,7 @@ void SneakyJoystick::updateVelocity(CCPoint point)
 	
 	if(isDPad){
 		float anglePerSector = 360.0f / numberOfDirections * SJ_DEG2RAD;
-		angle = round(angle/anglePerSector) * anglePerSector;
+		angle = round1(angle/anglePerSector) * anglePerSector;
 	}
 	
 	cosAngle = cosf(angle);
